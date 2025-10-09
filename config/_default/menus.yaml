@@ -1,0 +1,30 @@
+# Navigation Links
+# Each item corresponds to a section of your homepage or a standalone page.
+# The weight defines the display order (lower = earlier).
+
+main:
+  - name: Home
+    url: /#about
+    weight: 10
+
+
+
+  - name: Publications
+    url: /#publications
+    weight: 30
+
+  - name: Projects
+    url: /#projects
+    weight: 40
+
+  - name: Experience
+    url: /#experience
+    weight: 50
+
+  - name: Skills
+    url: /#skills
+    weight: 60
+
+  - name: Awards
+    url: /#awards
+    weight: 70

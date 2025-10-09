@@ -1,0 +1,80 @@
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Appearance
+appearance:
+  mode: system
+  color: indigo
+
+# SEO
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: 'École Normale Supérieure Paris-Saclay'
+    description: 'Thomas Gravier - Researcher in Applied Mathematics & Machine Learning. PhD student at ENS Paris-Saclay working on Schrödinger Bridge Matching, Optimal Transport, and Generative Modeling.'
+    twitter: ''
+  analytics:
+    google_analytics: 'G-XXXXXXXXXX' # Remplacez par votre ID Google Analytics
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+header:
+  navbar:
+    enable: true
+    block: 'navbar'
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    show_day_night: true
+    show_language: false
+    highlight_active_link: true
+    logo:
+      text: 'Thomas Gravier'
+      # Optionnel: ajouter une image de logo
+      # filename: 'icon.svg'
+
+# Site footer
+footer:
+  copyright:
+    notice: '© {year} Thomas Gravier. This work is licensed under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
+      allow_commercial: false
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+
+# Site features
+features:
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+
+# Configure the home page
+cms:
+  local_backend: false
+  
+# Main menu
+main_menu:
+  enable: true
+  align: r
+  show_logo: true
+
+# Custom CSS and JS
+custom_css: ["custom.css"]
+custom_js: ["custom.js"]

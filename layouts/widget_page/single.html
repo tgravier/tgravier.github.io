@@ -1,0 +1,12 @@
+{{- define "main" -}}
+
+{{/* Hugo Blox: Homepage */}}
+{{- $homepage := site.GetPage "/" -}}
+{{- $sections := where (where $homepage.Resources "Kind" "page") ".Params.active" "!=" false -}}
+{{- $sections := sort $sections ".Params.weight" -}}
+
+{{- range $sections -}}
+{{- partial "functions/get_widget" . -}}
+{{- end -}}
+
+{{- end -}}

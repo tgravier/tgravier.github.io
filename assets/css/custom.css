@@ -1,0 +1,15 @@
+/* Scroll spy improvements */
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for fixed navbar */
+section[id] {
+    scroll-margin-top: 70px;
+}
