@@ -7,10 +7,12 @@ authors: ["Thomas Gravier"]
 supervisors: ["Thomas Courtat"]
 links:
   - name: "Full Report (PDF)"
-    url: "https://github.com/tgravier/MVA-Portfolio/blob/master/01_semester_1/Deep_Learning_and_Signal_Processing/README(1).md"
+    url: "https://github.com/tgravier/MVA-Portfolio/tree/master/01_semester_1/Signal_Processing/Project"
+  - name: "Code Repository"
+    url: "https://github.com/tgravier/MVA-Portfolio/tree/master/01_semester_1/Signal_Processing/Project"
 image:
-  filename: wave_unet_audio.jpg
-  caption: "Wave-U-Net for joint voice and noise estimation from raw audio waveforms."
+  filename: featured.jpg
+  caption: "Audio source separation: decomposing mixed signals into voice and noise components using Wave-U-Net architecture."
 ---
 
 This project was completed within the **Deep Learning & Signal Processing** course taught by **Thomas Courtat** at ENS Paris-Saclay (Master MVA).  

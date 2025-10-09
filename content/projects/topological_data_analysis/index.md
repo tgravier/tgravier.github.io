@@ -6,8 +6,8 @@ tags: ["Topological Data Analysis", "Persistence Diagrams", "Graph Learning", "N
 authors: ["Thomas Gravier", "Blandine Gorce", "Laura Choquet"]
 supervisors: ["Frédéric Chazal", "Julien Tierny"]
 image:
-  filename: perslay_tda.jpg
-  caption: "PersLay: Neural Layer for Persistence Diagrams and Graph Topology Learning"
+  filename: featured.jpg
+  caption: "PersLay: Neural network layer for processing persistence diagrams and encoding topological features into deep learning architectures."
 ---
 
 This project was conducted as part of the **Topological Data Analysis for Imaging and Machine Learning** course at ENS Paris-Saclay (Master MVA).  

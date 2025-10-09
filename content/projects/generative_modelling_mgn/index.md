@@ -9,10 +9,10 @@ links:
   - name: "Full Report (PDF)"
     url: "Projet_Generative_Modelling_GRAVIER_PICARD.pdf"
   - name: "Code Repository"
-    url: "https://github.com/emilio-pcrd/generative_modelling"
+    url: "https://github.com/tgravier/MVA-Portfolio/tree/master/02_semester_2/Generative_Modeling/project_source_code"
 image:
-  filename: generative_mgn.jpg
-  caption: "Monotone Gradient Networks (MGN) for transport-based generative modeling."
+  filename: featured.jpg
+  caption: "Learning Gradients of Convex Functions with Monotone Gradient Networks - Project visualization."
 ---
 
 This project was part of the **Generative Modeling** course at **ENS Paris-Saclay – Master MVA**, focusing on the intersection of **deep learning**, **convex analysis**, and **optimal transport**.  
@@ -33,29 +33,34 @@ These models were originally proposed to learn monotone operators corresponding 
 
 ### Theoretical Framework
 
-The work revisits fundamental results from **Brenier’s theorem** and **optimal transport theory**, where the optimal transport map between two continuous distributions is the **gradient of a convex function**.
+The work revisits fundamental results from **Brenier's theorem** and **optimal transport theory**, where the optimal transport map between two continuous distributions is the **gradient of a convex function**.
 
 We formally rederived:
 - The PSD constraints on network Jacobians to ensure monotonicity  
 - Theoretical proofs that **C-MGN** and **M-MGN** satisfy convex-gradient conditions  
 - The connection between **Sinkhorn distances**, **Wasserstein metrics**, and **entropy-regularized OT**
 
+#### Mathematical Foundation
+
+The key insight is that the optimal transport map **T*** from distribution **μ** to **ν** can be written as the gradient of a convex potential function **φ**. For MGNs, we ensure convexity by constraining the Jacobian to be positive semi-definite, which guarantees that the learned transport map is monotone and corresponds to an optimal coupling.
+
 ---
 
 ### Experiments
 
 #### 1. Gradient Field Approximation
-We validated the architectures on synthetic convex functions (e.g. \( f(x) = x_1^4 + \frac{x_2^2}{2} + x_1x_2/2 + \dots \)).  
+We validated the architectures on synthetic convex functions such as **f(x) = x₁⁴ + x₂²/2 + x₁x₂/2**.  
 Both models achieved **MAE ≈ 10⁻⁵** on gradient field prediction.
 
 #### 2. Optimal Transport Between Distributions
 We trained both models to learn transport maps between:
-- Gaussian → Gaussian
-- Gaussian → Banana distributions  
+- **Gaussian → Gaussian**: Standard multivariate distributions
+- **Gaussian → Banana**: Non-linear target distributions  
 
 Using **Sinkhorn loss**, the results were:
+
 | Model | Dataset | Wasserstein Distance ↓ |
-|--------|----------|-----------------------:|
+|-------|---------|----------------------:|
 | C-MGN | Gaussian | 0.12 |
 | M-MGN | Gaussian | 0.09 |
 | C-MGN | Banana | 0.19 |
@@ -67,6 +72,19 @@ Using **Sinkhorn loss**, the results were:
 - **Domain Adaptation:** style transfer from day → sunset scenes via learned color distributions.
 
 C-MGN produced results comparable to small VAEs, while maintaining theoretical guarantees of convexity and monotonicity.
+
+---
+
+### Technical Implementation
+
+#### Architecture Details
+- **C-MGN (Cascaded)**: Sequential convex layers with PSD constraints
+- **M-MGN (Modular)**: Parallel branches combined with convex combination
+
+#### Key Components
+1. **Convexity Constraints**: Enforced via spectral normalization of Jacobians
+2. **Monotonicity**: Guaranteed through positive-definite Hessian matrices  
+3. **Transport Loss**: Combination of Wasserstein distance and Sinkhorn regularization
 
 ---
 

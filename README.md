@@ -1,33 +1,61 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/theme-academic-cv)
+# Thomas Gravier - Academic Website
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
+# Thomas Gravier - Academic Website
 
-<h1 align="center">Build an Academic CV and Resumé That Stands Out</h1>
+[![Website](https://img.shields.io/badge/Website-tgravier.github.io-blue?style=for-the-badge&logo=firefox)](https://tgravier.github.io)
+[![GitHub](https://img.shields.io/badge/GitHub-tgravier-black?style=for-the-badge&logo=github)](https://github.com/tgravier)
+[![Scholar](https://img.shields.io/badge/Google_Scholar-Thomas_Gravier-blue?style=for-the-badge&logo=googlescholar)](https://scholar.google.com/citations?user=_5Pw9gEAAAAJ&hl=fr&oi=ao)
+
+<h1 align="center">Researcher in Applied Mathematics & Machine Learning</h1>
 
 <p align="center">
-  <strong>Your unfair advantage in academia and tech.</strong><br/>
-  Showcase your work, boost your citations, and land your dream job at places like <strong>Meta, Google, and Stanford</strong>.
+  <strong>PhD Student at École Normale Supérieure Paris-Saclay</strong><br/>
+  Specializing in <strong>Optimal Transport</strong>, <strong>Diffusion Models</strong>, and <strong>Generative Modeling</strong>
 </p>
 
 <p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>🚀 Deploy Your Free CV in 60s</b></a>
+  <a href="https://tgravier.github.io"><b>Visit My Website</b></a>
   &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/?open=academic-cv&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
+  <a href="https://tgravier.github.io/uploads/resume.pdf">Download CV</a>
   &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>✨ Upgrade to Pro</b></a>
+  <a href="https://github.com/tgravier/MVA-Portfolio">Research Portfolio</a>
 </p>
 
-<p align="center">
-  Trusted by 250,000+ researchers, students, and educators worldwide.
-</p>
+## About This Site
 
-<p align="center">
-  <a href="https://discord.gg/z8wNYzb">
-    <img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord">
-  </a>
-  <a href="https://github.com/HugoBlox/theme-academic-cv">
-    <img src="https://img.shields.io/github/stars/HugoBlox/theme-academic-cv?label=Star%20Academic%20CV&style=social" alt="GitHub Stars">
-  </a>
+This repository contains the source code for my academic website, built with **Hugo** and the **Hugo Blox** framework. The site showcases my research work, publications, and projects in applied mathematics and machine learning.
+
+### Key Features
+- **Responsive Design**: Optimized for all devices
+- **Academic Focus**: Publications, research, and project showcase
+- **Modern Framework**: Built with Hugo and deployed via GitHub Actions
+- **SEO Optimized**: Enhanced discoverability for academic content
+
+### Research Focus
+- **Multi-marginal Schrödinger Bridge Matching** for video generation
+- **Optimal Transport Theory** and applications to ML
+- **Information Geometry** in machine learning
+- **Generative Modeling** for biological data analysis
+
+---
+
+## Technical Stack
+
+## 🎯 About This Site
+
+This repository contains the source code for my academic website, built with **Hugo** and the **Hugo Blox** framework. The site showcases my research work, publications, and projects in applied mathematics and machine learning.
+
+### ✨ Key Features
+- **Responsive Design**: Optimized for all devices
+- **Academic Focus**: Publications, research, and project showcase
+- **Modern Framework**: Built with Hugo and deployed via GitHub Actions
+- **SEO Optimized**: Enhanced discoverability for academic content
+
+### 🔬 Research Focus
+- **Multi-marginal Schrödinger Bridge Matching** for video generation
+- **Optimal Transport Theory** and applications to ML
+- **Information Geometry** in machine learning
+- **Generative Modeling** for biological data analysis
 </p>
 
 ---
@@ -39,12 +67,150 @@ The Academic CV template is designed for impact. Whether you're an AI researcher
 - **✍️ Showcase Your Expertise:** Easily write content with Markdown, Jupyter, or RStudio. Display your publications, talks, and projects in a stunning, professional layout.
 - **📈 Boost Your Citations:** Automatic BibTeX import and SEO-optimized pages mean your work gets discovered more easily, increasing your research impact.
 - **💼 Land Your Dream Job:** Create a memorable online presence that impresses recruiters from top tech firms and prestigious universities.
-- **🚀 Launch in Minutes:** No coding required. The Hugo Blox Builder lets you customize everything with drag-and-drop sections.
+---
+
+## Technical Stack
+
+This website is built with modern web technologies:
+
+- **Framework**: [Hugo](https://gohugo.io/) with [Hugo Blox](https://hugoblox.com/)
+- **Deployment**: GitHub Actions → GitHub Pages
+- **Styling**: Custom CSS with responsive design
+- **Analytics**: Google Analytics integration
+- **Performance**: Optimized for speed and SEO
+
+### Features
+- **Responsive Design**: Works on all devices
+- **Academic Publications**: BibTeX integration
+- **Project Showcase**: Research portfolio
+- **CV Download**: PDF resume integration
+- **Contact Forms**: Professional contact options
+- **Social Links**: GitHub, Scholar, LinkedIn integration
+
+---
+
+## Quick Start
+
+### For Researchers Wanting to Use This Template
+
+1. **Fork this repository**
+2. **Edit the content** in `/content/` folders
+3. **Update your information** in `/content/authors/admin/_index.md`
+4. **Add your publications** in `/content/publications/`
+5. **Deploy** to GitHub Pages
+
+### Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/tgravier/tgravier.github.io.git
+cd tgravier.github.io
+
+# Install dependencies
+npm install
+
+# Run locally
+hugo server -D
+```
+
+---
+
+## Contact
+
+**Thomas Gravier**  
+Email: [thomas.gravier@gadz.org](mailto:thomas.gravier@gadz.org)  
+Website: [tgravier.github.io](https://tgravier.github.io)  
+Google Scholar: [Profile](https://scholar.google.com/citations?user=_5Pw9gEAAAAJ&hl=fr&oi=ao)
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## 🤝 Research Collaborators
 
 <p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme">
-    <img src="https://img.shields.io/badge/⚡️%20Get%20Your%20CV%20in%2060s-ff4655?style=for-the-badge" alt="Deploy this template" width="400">
+  <a href="https://scholar.google.com/citations?user=EXAMPLE" title="Thomas Boyer - Co-author ICLR 2026">
+    <img src="https://github.com/tgravier.png" alt="Thomas Boyer" width="80" height="80" style="border-radius: 50%; margin: 10px;">
   </a>
+  <a href="https://www.ibens.ens.fr/spip.php?article500" title="Auguste Genovesio - Senior Researcher IBENS">
+    <img src="https://github.com/github.png" alt="Auguste Genovesio" width="80" height="80" style="border-radius: 50%; margin: 10px;">
+  </a>
+  <a href="https://ens-paris-saclay.fr/" title="ENS Paris-Saclay Collaborators">
+    <img src="https://github.com/github.png" alt="ENS Collaborator" width="80" height="80" style="border-radius: 50%; margin: 10px;">
+  </a>
+</p>
+
+<p align="center">
+  <em>Click on the avatars to visit their academic profiles</em>
+</p>
+
+---
+
+## 🛠️ Technical Stack
+
+This website is built with modern web technologies:
+
+- **Framework**: [Hugo](https://gohugo.io/) with [Hugo Blox](https://hugoblox.com/)
+- **Deployment**: GitHub Actions → GitHub Pages
+- **Styling**: Custom CSS with responsive design
+- **Analytics**: Google Analytics integration
+- **Performance**: Optimized for speed and SEO
+
+### 📊 Features
+- ✅ **Responsive Design**: Works on all devices
+- ✅ **Academic Publications**: BibTeX integration
+- ✅ **Project Showcase**: Research portfolio
+- ✅ **CV Download**: PDF resume integration
+- ✅ **Contact Forms**: Professional contact options
+- ✅ **Social Links**: GitHub, Scholar, LinkedIn integration
+
+---
+
+## 🚀 Quick Start
+
+### For Researchers Wanting to Use This Template
+
+1. **Fork this repository**
+2. **Edit the content** in `/content/` folders
+3. **Update your information** in `/content/authors/admin/_index.md`
+4. **Add your publications** in `/content/publications/`
+5. **Deploy** to GitHub Pages
+
+### Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/tgravier/tgravier.github.io.git
+cd tgravier.github.io
+
+# Install dependencies
+npm install
+
+# Run locally
+hugo server -D
+```
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+## 📞 Contact
+
+**Thomas Gravier**  
+📧 [thomas.gravier@gadz.org](mailto:thomas.gravier@gadz.org)  
+🌐 [tgravier.github.io](https://tgravier.github.io)  
+🔬 [Google Scholar](https://scholar.google.com/citations?user=_5Pw9gEAAAAJ&hl=fr&oi=ao)
+
+---
+
+<p align="center">
+  <strong>⭐ If you find this helpful, please consider starring the repository!</strong>
 </p>
 
 ---

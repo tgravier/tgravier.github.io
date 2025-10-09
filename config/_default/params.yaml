@@ -38,9 +38,9 @@ header:
     show_language: false
     highlight_active_link: true
     logo:
-      text: 'Thomas Gravier'
-      # Optionnel: ajouter une image de logo
-      # filename: 'icon.svg'
+      text: ''
+      # Logo désactivé
+      # filename: ''
 
 # Site footer
 footer:
@@ -61,7 +61,7 @@ locale:
 # Site features
 features:
   math:
-    enable: false
+    enable: true
   privacy_pack:
     enable: false
 

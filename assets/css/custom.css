@@ -13,3 +13,26 @@ html {
 section[id] {
     scroll-margin-top: 70px;
 }
+
+/* Suppression du logo Hugo Blox et autres logos */
+.navbar-brand,
+.navbar-brand img,
+.navbar-brand svg,
+.navbar-logo,
+.site-logo,
+.hb-logo,
+.hugo-blox-logo {
+    display: none !important;
+}
+
+/* Suppression des éventuels logos dans le footer */
+.footer-logo,
+.powered-by-logo {
+    display: none !important;
+}
+
+/* Suppression du logo flottant s'il existe */
+.floating-logo,
+.corner-logo {
+    display: none !important;
+}

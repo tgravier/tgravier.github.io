@@ -67,6 +67,60 @@ sections:
     design:
       view: citation
 
+  # === COLLABORATORS ===
+  - block: markdown
+    id: collaborators
+    content:
+      title: 'Collaborators'
+      subtitle: ''
+      text: |-
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; justify-items: center; margin: 2rem 0; max-width: 800px; margin-left: auto; margin-right: auto;">
+          <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <a href="https://thethomasboyer.github.io/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+              <img src="https://github.com/github.png" alt="Thomas Boyer" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 0.8rem; border: 3px solid #047857; display: block;">
+              <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Thomas Boyer</div>
+              <div style="font-size: 0.8rem; color: #6b7280;">IBENS - ENS Ulm</div>
+            </a>
+          </div>
+          <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <a href="https://www.ibens.bio.ens.psl.eu/spip.php?rubrique47" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+              <img src="https://github.com/github.png" alt="Auguste Genovesio" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 0.8rem; border: 3px solid #047857; display: block;">
+              <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Auguste Genovesio</div>
+              <div style="font-size: 0.8rem; color: #6b7280;">IBENS - ENS Ulm</div>
+            </a>
+          </div>
+          <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <a href="https://github.com/emilio-pcrd" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+              <img src="https://github.com/github.png" alt="Emilio Picard" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 0.8rem; border: 3px solid #047857; display: block;">
+              <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Emilio Picard</div>
+              <div style="font-size: 0.8rem; color: #6b7280;">Sony CSL - Sorbonne Université</div>
+            </a>
+          </div>
+          <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <a href="https://www.linkedin.com/in/cl%C3%A9mentine-lauvergne-4114b1297/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+              <img src="https://github.com/github.png" alt="Clémentine Lauvergne" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 0.8rem; border: 3px solid #047857; display: block;">
+              <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Clémentine Lauvergne</div>
+              <div style="font-size: 0.8rem; color: #6b7280;">ENS Paris-Saclay<br/>Dauphine Université </div>
+            </a>
+          </div>
+          <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <a href="https://github.com/rosaliemillner" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+              <img src="https://github.com/github.png" alt="Rosalie Millner" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 0.8rem; border: 3px solid #047857; display: block;">
+              <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Rosalie Millner</div>
+              <div style="font-size: 0.8rem; color: #6b7280;">ENS Paris-Saclay<br/>Dauphine Université</div>
+            </a>
+          </div>
+          <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <a href="https://www.linkedin.com/in/bl-gorce/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+              <img src="https://github.com/github.png" alt="Blandine Gorce" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 0.8rem; border: 3px solid #047857; display: block;">
+              <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 0.2rem;">Blandine Gorce</div>
+              <div style="font-size: 0.8rem; color: #6b7280;">ENS Paris-Saclay<br/>Sorbonne Université</div>
+            </a>
+          </div>
+        </div>
+    design:
+      columns: '1'
+
   # === PROJECTS (now just below Publications) ===
   - block: collection
     id: projects

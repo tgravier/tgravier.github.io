@@ -6,8 +6,8 @@ tags: ["Probabilistic Graphical Models", "Generative Models", "Adversarial Robus
 authors: ["Thomas Gravier", "Rosalie Millner", "Emilio Picard"]
 supervisors: ["Francis Bach"]
 image:
-  filename: pgm_generative_vs_discriminative.jpg
-  caption: "Robustness comparison between generative (GBZ) and discriminative (DBX) classifiers under adversarial attacks"
+  filename: featured.jpg
+  caption: "MedMNIST v2: Official dataset overview showing the 18 standardized biomedical image classification datasets used in our comparative study of generative vs discriminative models."
 links:
   - name: "Code Repository"
     url: "https://github.com/rosaliemillner/PGM_project"

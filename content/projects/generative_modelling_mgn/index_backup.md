@@ -1,0 +1,148 @@
+---
+title: "Learning Gradients of Convex Functions with Monotone Gradient Networks"
+summary: "Study and implementation of Monotone Gradient Networks (MGN) for learning gradients of convex functions, optimal transport, and generative modeling on high-dimensional data."
+date: 2025-02-20
+tags: ["Optimal Transport", "Generative Modeling", "Convex Optimization", "Neural Networks", "Master MVA"]
+authors: ["Thomas Gravier", "Emilio Picard"]
+supervisors: ["Gabriel Peyré", "Master MVA Teaching Team"]
+links:
+  - name: "Full Report (PDF)"
+    url: "Projet_Generative_Modelling_GRAVIER_PICARD.pdf"
+  - name: "Code Repository"
+    url: "https://github.com/tgravier/MVA-Portfolio/tree/master/02_semester_2/Generative_Modeling/project_source_code"
+image:
+  filename: "featured.jpg"
+  caption: "Learning Gradients of Convex Functions with Monotone Gradient Networks - Project visualization."
+math: true
+---
+
+This project was part of the **Generative Modeling** course at **ENS Paris-Saclay – Master MVA**, focusing on the intersection of **deep learning**, **convex analysis**, and **optimal transport**.  
+It aimed to explore **Monotone Gradient Networks (MGNs)** — architectures that learn gradients of convex functions to model structured transport maps between probability distributions.
+
+---
+
+### Objective
+
+To understand, rederive, and implement recent architectures for **learning convex gradients** and extend them to **generative modeling** tasks.  
+We analyzed and compared two recent architectures:
+- **Cascaded Monotone Gradient Network (C-MGN)**
+- **Modular Monotone Gradient Network (M-MGN)**
+
+These models were originally proposed to learn monotone operators corresponding to the gradients of convex potentials, offering a principled connection between **convex optimization** and **generative transport**.
+
+---
+
+### Theoretical Framework
+
+The work revisits fundamental results from **Brenier’s theorem** and **optimal transport theory**, where the optimal transport map between two continuous distributions is the **gradient of a convex function**.
+
+We formally rederived:
+- The PSD constraints on network Jacobians to ensure monotonicity  
+- Theoretical proofs that **C-MGN** and **M-MGN** satisfy convex-gradient conditions  
+- The connection between **Sinkhorn distances**, **Wasserstein metrics**, and **entropy-regularized OT**
+
+#### Mathematical Foundation
+
+The key insight is that the optimal transport map \( T^* \) from distribution \( \mu \) to \( \nu \) can be written as:
+
+$$
+T^* = \nabla \phi
+$$
+
+where \( \phi \) is a convex potential function. For MGNs, we ensure convexity by constraining the Jacobian:
+
+$$
+\nabla^2 \phi \succeq 0
+$$
+
+This guarantees that the learned transport map is monotone and corresponds to an optimal coupling.
+
+---
+
+### Experiments
+
+#### 1. Gradient Field Approximation
+We validated the architectures on synthetic convex functions such as:
+
+$$
+f(x) = x_1^4 + \frac{x_2^2}{2} + \frac{x_1 x_2}{2}
+$$
+
+Both models achieved **MAE ≈ 10⁻⁵** on gradient field prediction.
+
+#### 2. Optimal Transport Between Distributions
+We trained both models to learn transport maps between:
+- **Gaussian → Gaussian**: Standard multivariate distributions  
+- **Gaussian → Banana**: Non-linear target distributions  
+
+Using **Sinkhorn loss** \( \mathcal{L}_{\epsilon} \), the results were:
+
+| Model | Dataset | Wasserstein Distance ↓ |
+|-------|----------|----------------------:|
+| C-MGN | Gaussian | 0.12 |
+| M-MGN | Gaussian | 0.09 |
+| C-MGN | Banana | 0.19 |
+| M-MGN | Banana | 0.17 |
+
+The Sinkhorn loss is defined as:
+
+$$
+\mathcal{L}_{\epsilon}(\mu, \nu) = \min_{\pi \in \Pi(\mu,\nu)} \langle C, \pi \rangle + \epsilon H(\pi)
+$$
+
+where \( H(\pi) \) is the entropy regularization term.
+
+#### 3. High-Dimensional Generative Modeling
+- **MNIST:** mapping Gaussian noise → handwritten digits (transport-based generation).  
+- **CIFAR-10:** grayscale → color image translation (optimal coupling for colorization).  
+- **Domain Adaptation:** style transfer from day → sunset scenes via learned color distributions.
+
+C-MGN produced results comparable to small VAEs, while maintaining theoretical guarantees of convexity and monotonicity.
+
+---
+
+### Technical Implementation
+
+#### Architecture Details
+- **C-MGN (Cascaded)**: Sequential convex layers with PSD constraints  
+- **M-MGN (Modular)**: Parallel branches combined with convex combination  
+
+#### Key Components
+1. **Convexity Constraints**: Enforced via spectral normalization of Jacobians  
+2. **Monotonicity**: Guaranteed through positive-definite Hessian matrices  
+3. **Transport Loss**: Combination of Wasserstein distance and Sinkhorn regularization  
+
+#### Training Procedure
+The models are trained to minimize:
+
+$$
+\mathcal{L} = \mathcal{W}_2(\nu, T_\sharp \mu) + \lambda \|\nabla^2 \phi - \text{PSD}\|_F^2
+$$
+
+where \( T_\sharp \mu \) is the pushforward measure and \( \lambda \) controls convexity regularization.
+
+---
+
+### Key Findings
+
+- **MGN models** enable stable generative training using transport-based objectives.  
+- **Convex constraints** enhance interpretability and reduce mode collapse in learned mappings.  
+- Successful extension of MGNs to **high-dimensional visual data** (MNIST, CIFAR-10).  
+- Demonstrated structured **image-to-image translation** using optimal transport principles.
+
+---
+
+### Perspectives
+
+Future work includes integrating **convolutional operators** into MGNs to better capture local spatial correlations while preserving convexity.  
+This approach could serve as a bridge between **optimal transport**, **diffusion models**, and **energy-based generative modeling**.
+
+---
+
+### References
+
+- Chaudhari, S., Pranav, S., Moura, J. (2023–2025). *Learning Gradients of Convex Functions with Monotone Gradient Networks.*  
+- Peyré, G., Cuturi, M. (2020). *Computational Optimal Transport.*  
+- Brenier, Y. (1991). *Polar Factorization and Monotone Rearrangement of Vector-Valued Functions.*  
+- Cuturi, M. (2013). *Sinkhorn Distances: Lightspeed Computation of Optimal Transportation Distances.*  
+- Santambrogio, F. (2015). *Optimal Transport for Applied Mathematicians.*
