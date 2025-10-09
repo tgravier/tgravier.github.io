@@ -78,23 +78,23 @@ work:
   - position: Research Intern
     company_name: École Normale Supérieure (Ulm) — IBENS
     company_url: 'https://www.ibens.ens.fr/'
-    date_start: 2025-01-01
-    date_end: 2025-06-30
+    date_start: 2025-03-01
+    date_end: 2025-09-30
     summary: |
       I conducted research on **Dynamical Multi-Marginal Schrödinger Bridges** and their application to **video generation from unpaired static data**.  
       The work bridges stochastic processes, entropy-regularized optimal transport, and generative modeling, leading to a **paper submission to ICLR 2026**.
   - position: Research Engineer
     company_name: French Space Agency (CNES)
     company_url: 'https://cnes.fr/'
-    date_start: 2023-01-01
-    date_end: 2024-01-01
+    date_start: 2023-06-30
+    date_end: 2024-08-01
     summary: |
       I worked on **inverse problem algorithms**, **Physics-Informed Machine Learning**, and **signal processing** for fluid dynamics and aerospace applications.
   - position: Research Intern
     company_name: French Space Agency (CNES)
     company_url: 'https://cnes.fr/'
-    date_start: 2022-01-01
-    date_end: 2022-12-31
+    date_start: 2022-06-01
+    date_end: 2023-06-30
     summary: |
       I developed mathematical models for **capillary-driven fluid dynamics** and contributed to a filling system tested in **microgravity** during the 2022 parabolic flight campaign.
 

@@ -47,7 +47,6 @@ sections:
         - Generative Modeling & Diffusion Processes  
         - Optimal Transport & Wasserstein Distances  
         - Information Geometry & Geometric Deep Learning  
-        - Applications to Computational Biology  
         - Mathematical Foundations of AI  
 
         Currently seeking a **PhD position (CIFRE or academic)** in **applied mathematics and machine learning**.
