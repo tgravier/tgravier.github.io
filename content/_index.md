@@ -132,6 +132,10 @@ sections:
       filters:
         folders:
           - projects
+        exclude_featured: false
+      sort_by: 'Date'
+      sort_ascending: false
+      count: 8
     design:
       view: article-grid
       fill_image: false

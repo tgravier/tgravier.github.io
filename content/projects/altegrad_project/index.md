@@ -6,8 +6,8 @@ tags: ["Graph Neural Networks", "Latent Diffusion", "Graph Generation", "Variati
 authors: ["Thomas Gravier", "Clémentine Lauvergne"]
 supervisors: ["Michalis Vazirgiannis"]
 image:
-  filename: altegrad_graphgen.jpg
-  caption: "Graph generation with conditional diffusion and VAE"
+  filename: featured.jpg
+  caption: "Neural Graph Generator architecture: VAE encoder with SAGEConv, latent diffusion process, and growing MLP decoder for conditional graph generation"
 ---
 
 This project was conducted as part of the **Advanced Learning for Text and Graph Data** course in the Master MVA at ENS Paris-Saclay.  

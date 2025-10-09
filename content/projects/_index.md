@@ -31,6 +31,7 @@ sections:
           - generative_modelling_mgn
           - mallat_transport_denoising
           - probabilistic_graphical_models
+          - schrodinger_bridge_video
           - topological_data_analysis
           - wave_unet_source_separation
     design:

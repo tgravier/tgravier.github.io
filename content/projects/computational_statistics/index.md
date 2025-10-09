@@ -6,8 +6,8 @@ tags: ["Computational Statistics", "Gradient Boosting", "Monte Carlo Methods", "
 authors: ["Thomas Gravier", "Théotime Le Hellard"]
 supervisors: ["Stéphanie Allassonnière"]
 image:
-  filename: comp_stats_boosting.jpg
-  caption: "Functional gradient boosting and stochastic optimization experiments"
+  filename: featured.jpg
+  caption: "Gradient Boosting ensemble method: combining weak learners (decision trees) into a strong predictor through functional optimization"
 ---
 
 This project was carried out during the **Computational Statistics** course taught by Prof. **Stéphanie Allassonnière** (Sorbonne Université, CNRS) in the Master MVA program at ENS Paris-Saclay.  
