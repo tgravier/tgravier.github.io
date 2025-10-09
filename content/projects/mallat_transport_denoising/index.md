@@ -9,8 +9,8 @@ links:
   - name: "Project Code / GitHub"
     url: "https://github.com/tgravier/MVA-Portfolio/blob/master/02_semester_2/Data_Generation_in_AI_through_Transport_and_Denoising/"
 image:
-  filename: mallat_transport_denoising.jpg
-  caption: "EchoCem: segmentation of ultrasonic well images with deep transport-denoising models"
+  filename: featured.jpg
+  caption: "EchoCem Challenge: Isolation scanner pulse-echo measurement process for detecting TIE (Third Interface Echo) and casing in ultrasonic well imagery segmentation."
 ---
 
 This project was performed under the **“Data Generation in AI by Transport and Denoising”** course led by Stéphane Mallat (Collège de France), as part of the Master MVA curriculum.  
