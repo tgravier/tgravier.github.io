@@ -82,7 +82,7 @@ work:
     date_end: 2025-09-30
     summary: |
       I conducted research on **Dynamical Multi-Marginal Schrödinger Bridges** and their application to **video generation from unpaired static data**.  
-      The work bridges stochastic processes, entropy-regularized optimal transport, and generative modeling, leading to a **paper submission to ICLR 2026**.
+      The work bridges stochastic processes, entropy-regularized optimal transport, and generative modeling, leading to a **paper submission to ICML 2026**.
   - position: Research Engineer
     company_name: French Space Agency (CNES)
     company_url: 'https://cnes.fr/'
