@@ -48,10 +48,10 @@
 Multi-marginal Schrödinger Bridges for video generation from unpaired data
 
 **🛰️ Research Engineer** - *French Space Agency (CNES)* (2023-2024)  
-Inverse problems, Physics-Informed ML, signal processing for aerospace
+Inverse problems, Physics-Informed ML, signal processing
 
 **🔧 Research Intern** - *French Space Agency (CNES)* (2022-2023)  
-Capillary fluid dynamics models tested in microgravity
+Developed uncertainty-quantified deep models for remote sensing image enhancement.
 
 ---
 

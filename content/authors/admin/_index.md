@@ -89,14 +89,14 @@ work:
     date_start: 2023-06-30
     date_end: 2024-08-01
     summary: |
-      I worked on **inverse problem algorithms**, **Physics-Informed Machine Learning**, and **signal processing** for fluid dynamics and aerospace applications.
+      Developed inverse problem solvers based on Physics-Informed Neural Networks for high-dimensional space signal reconstruction. Designed uncertainty-aware models for remote sensing data.
   - position: Research Intern
     company_name: French Space Agency (CNES)
     company_url: 'https://cnes.fr/'
     date_start: 2022-06-01
     date_end: 2023-06-30
     summary: |
-      I developed mathematical models for **capillary-driven fluid dynamics** and contributed to a filling system tested in **microgravity** during the 2022 parabolic flight campaign.
+      Developed uncertainty-quantified deep models for remote sensing image enhancement.
 
 skills:
   - name: Technical Skills
